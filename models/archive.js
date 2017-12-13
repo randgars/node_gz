@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// const db = require('../db');
-// const ObjectID = require('mongodb').ObjectID;
 
 const archiveSchema = mongoose.Schema({
   title: {
@@ -9,10 +7,16 @@ const archiveSchema = mongoose.Schema({
     required: true
   },
   description: {
-    type: String
+    type: String,
+    required: true
   },
   expire: {
-    type: Date
+    type: Date,
+    required: true
+  },
+  path: {
+    type: String,
+    required: true
   }
 })
 
