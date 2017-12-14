@@ -7,4 +7,6 @@ router.post('/api/archives', bodyParser({ multipart: true }), archiveController.
 
 router.get('/api/archives', archiveController.getAll)
 
+router.get('/api/archives/:title/:lines', archiveController.getArchiveLines)
+
 module.exports = router;
