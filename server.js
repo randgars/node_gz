@@ -3,7 +3,8 @@ const logger = require('koa-morgan');
 const cors = require('koa2-cors');
 const config = require('./config');
 const db = require('./db');
-const routes = require('./routes')
+const routes = require('./routes');
+const removeExpireArchives = require('./helpers/removeExpireArchives');
 
 const app = new Koa();
 
