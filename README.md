@@ -21,7 +21,7 @@ Content-Type: multipart/form-data
   
   * archive(.txt.gz)
   
-#### Get all archives from the server: GET ```/api/archives?first={first}&max={max}```
+#### Get all archives from the server: GET ```JavaScript /api/archives?first={first}&max={max}```
    * {first} - index of an element to start with
 
    * {max} - number of the elements to get
