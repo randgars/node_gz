@@ -14,13 +14,13 @@ MongoDB v3.4.7
 ##### POST ```/api/archives```
 Content-Type: multipart/form-data
 
-  *title: String (unique and required)
+  * title: String (unique and required)
   
-  *description: String
+  * description: String
   
-  *expiration_date: String
+  * expiration_date: String
   
-  *archive(.txt.gz)
+  * archive(.txt.gz)
   
 #### Get all archives from the server
 ##### GET ```/api/archives?first={first}&max={max}```
