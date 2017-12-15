@@ -24,12 +24,12 @@ Content-Type: multipart/form-data
   
 #### Get all archives from the server
 ##### GET ```/api/archives?first={first}&max={max}```
-    * {first} - index of an element to start with
+   * {first} - index of an element to start with
 
-    * {max} - number of the elements to get
+   * {max} - number of the elements to get
 
 #### Get archive lines
 ##### GET ```/api/archives/:id/:lines```
-    * /:id/ - archive id
+   * /:id/ - archive id
 
-    * /:lines - number of lines
+   * /:lines - number of lines
