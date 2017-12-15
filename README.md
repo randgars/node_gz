@@ -5,9 +5,9 @@
     $ npm install
     $ npm start
 
-***Node.js **v8.9.1*****
+*Node.js* ***v8.9.1***
 
-***MongoDB **v3.4.7*****
+*MongoDB* ***v3.4.7***
 
 ### API endpoint:
 #### Post archive to the server:
