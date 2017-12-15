@@ -5,8 +5,8 @@ $ git clone https://github.com/randgars/node_gz.git
 $ npm install
 $ npm start
 
-Node.js v8.9.1 \n
-MongoDB v3.4.7
+    dir Node.js v8.9.1
+    dir MongoDB v3.4.7
 
 ### Routes:
 #### Post archive to the server
