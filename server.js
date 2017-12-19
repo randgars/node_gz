@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const fse = require('fs-extra');
 const logger = require('koa-morgan');
 const cors = require('koa2-cors');
 const config = require('./config');
@@ -8,12 +9,21 @@ const removeExpireArchives = require('./helpers/removeExpireArchives');
 
 const app = new Koa();
 
+fse.ensureDir('./files')
+.then(() => {
+  console.log('Folder was created!')
+})
+.catch(err => {
+  console.error(err)
+})
+
 app.use(logger('tiny'));
 app.use(cors({
   origin: '*',
   allowMethods: ['GET', 'POST', 'DELETE'],
   allowHeaders: ['Content-Type'],
 }));
+
 
 db.connect('mongodb://localhost:27017/archives', (err) => {
   if (err) {
